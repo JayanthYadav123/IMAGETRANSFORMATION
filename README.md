@@ -136,7 +136,7 @@ CroppedImage= inputImage[20:150, 60:230]
 plt.axis('off')
 plt.imshow(CroppedImage)
 plt.show()
-```
+
 
 
 
