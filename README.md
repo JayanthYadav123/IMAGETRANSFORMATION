@@ -8,35 +8,35 @@ Anaconda - Python 3.7
 
 ## Algorithm:
 Step1:
-<Import the necessary libraries and read the original image and save it as a image variable./>
+Import the necessary libraries and read the original image and save it as a image variable.
 
 Step2:
 
-<Translate the image using M=np.float32([[1,0,20],[0,1,50],[0,0,1]]) translated_img=cv2.warpPerspective(input_img,M,(cols,rows))??/>
+Translate the image using M=np.float32([[1,0,20],[0,1,50],[0,0,1]]) translated_img=cv2.warpPerspective(input_img,M,(cols,rows))??
 
 Step3:
 
-<Scale the image using M=np.float32([[1.5,0,0],[0,2,0],[0,0,1]]) scaled_img=cv2.warpPerspective(input_img,M,(cols,rows))?>
+Scale the image using M=np.float32([[1.5,0,0],[0,2,0],[0,0,1]]) scaled_img=cv2.warpPerspective(input_img,M,(cols,rows))?
 
 Step4:
 
-<Shear the image using M_x=np.float32([[1,0.2,0],[0,1,0],[0,0,1]]) sheared_img_xaxis=cv2.warpPerspective(input_img,M_x,(cols,rows))/>
+Shear the image using M_x=np.float32([[1,0.2,0],[0,1,0],[0,0,1]]) sheared_img_xaxis=cv2.warpPerspective(input_img,M_x,(cols,rows))
 
 Step5:
 
-<Reflection of image can be achieved through the code M_x=np.float32([[1,0,0],[0,-1,rows],[0,0,1]]) reflected_img_xaxis=cv2.warpPerspective(input_img,M_x,(cols,rows))/>
+Reflection of image can be achieved through the code M_x=np.float32([[1,0,0],[0,-1,rows],[0,0,1]]) reflected_img_xaxis=cv2.warpPerspective(input_img,M_x,(cols,rows))
 
 Step6:
 
-<Rotate the image using angle=np.radians(45) M=np.float32([[np.cos(angle),-(np.sin(angle)),0],[np.sin(angle),np.cos(angle),0],[0,0,1]]) rotated_img=cv2.warpPerspective(input_img,M,(cols,rows))/>
+Rotate the image using angle=np.radians(45) M=np.float32([[np.cos(angle),-(np.sin(angle)),0],[np.sin(angle),np.cos(angle),0],[0,0,1]]) rotated_img=cv2.warpPerspective(input_img,M,(cols,rows))
 
 Step7:
 
-<Crop the image using cropped_img=input_img[20:150,60:230]/>
+Crop the image using cropped_img=input_img[20:150,60:230]
 
 Step8:
 
-<Display all the Transformed images and end the program./>
+Display all the Transformed images and end the program.
 
 ## Program:
 Developed By:G.Jayanth
@@ -59,10 +59,10 @@ M= np.float32([[1, 0, 100],
 translatedImage =cv2.warpPerspective (inputImage, M, (cols, rows))
 plt.imshow(translatedImage)
 plt.show()
-```
+
 
 ## ii) Image Scaling
-```
+
 rows, cols, dim = inputImage.shape
 M = np. float32 ([[1.5, 0 ,0],
                  [0, 1.8, 0],
@@ -70,11 +70,11 @@ M = np. float32 ([[1.5, 0 ,0],
 scaledImage=cv2.warpPerspective(inputImage, M, (cols * 2, rows * 2))
 plt.imshow(scaledImage)
 plt.show()
-```
+
 
 
 ## iii)Image shearing
-```
+
 matrixX = np.float32([[1, 0.5, 0],
                       [0, 1 ,0],
                       [0, 0, 1]])
@@ -89,11 +89,11 @@ plt.show()
 plt.imshow(shearedYaxis)
 plt.show()
 
-```
+
 
 
 ## iv)Image Reflection
-```
+
 matrixx=np.float32([[1, 0, 0],
                     [0,-1,rows],
                     [0,0,1]])
@@ -105,11 +105,11 @@ reflectedY=cv2.warpPerspective(inputImage, matrixy, (cols, rows))
 plt.imshow(reflectedY)
 plt.show()
 
-```
+
 
 
 ## v)Image Rotation
-```
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -123,10 +123,10 @@ rotatedImage = cv2.warpPerspective(inputImage,M,(int(cols),int(rows)))
 plt.axis('off')
 plt.imshow(rotatedImage)
 plt.show()
-```
+
 
 ## vi)Image Cropping
-```
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
