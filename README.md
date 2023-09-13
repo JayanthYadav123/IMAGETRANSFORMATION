@@ -43,8 +43,8 @@ Display all the Transformed images and end the program.
 Developed By:G.Jayanth
 Register Number:212221230030
 
-##  )Image Translation
-
+##  1)Image Translation
+`
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -61,7 +61,7 @@ translatedImage =cv2.warpPerspective (inputImage, M, (cols, rows))
 plt.imshow(translatedImage)
 plt.show()
 
-
+`
 ## ii) Image Scaling
 
 rows, cols, dim = inputImage.shape
