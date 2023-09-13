@@ -44,7 +44,7 @@ Developed By:G.Jayanth
 Register Number:212221230030
 
 ##  1)Image Translation
-
+```
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -139,7 +139,7 @@ plt.imshow(CroppedImage)
 plt.show()
 
 ```
-```
+
 
 
 
