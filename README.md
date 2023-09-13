@@ -39,11 +39,12 @@ Step8:
 Display all the Transformed images and end the program.
 
 ## Program:
+
 Developed By:G.Jayanth
 Register Number:212221230030
-
+```
 ## i)Image Translation
-
+```
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -60,9 +61,9 @@ translatedImage =cv2.warpPerspective (inputImage, M, (cols, rows))
 plt.imshow(translatedImage)
 plt.show()
 
-
+```
 ## ii) Image Scaling
-
+```
 rows, cols, dim = inputImage.shape
 M = np. float32 ([[1.5, 0 ,0],
                  [0, 1.8, 0],
@@ -74,7 +75,7 @@ plt.show()
 
 
 ## iii)Image shearing
-
+```
 matrixX = np.float32([[1, 0.5, 0],
                       [0, 1 ,0],
                       [0, 0, 1]])
@@ -88,12 +89,12 @@ plt.imshow(shearedXaxis)
 plt.show()
 plt.imshow(shearedYaxis)
 plt.show()
-
+```
 
 
 
 ## iv)Image Reflection
-
+```
 matrixx=np.float32([[1, 0, 0],
                     [0,-1,rows],
                     [0,0,1]])
@@ -105,7 +106,7 @@ reflectedY=cv2.warpPerspective(inputImage, matrixy, (cols, rows))
 plt.imshow(reflectedY)
 plt.show()
 
-
+```
 
 
 ## v)Image Rotation
@@ -124,9 +125,9 @@ plt.axis('off')
 plt.imshow(rotatedImage)
 plt.show()
 
-
+```
 ## vi)Image Cropping
-
+```
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -136,7 +137,7 @@ CroppedImage= inputImage[20:150, 60:230]
 plt.axis('off')
 plt.imshow(CroppedImage)
 plt.show()
-
+`
 
 
 
