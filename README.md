@@ -89,12 +89,12 @@ plt.imshow(shearedXaxis)
 plt.show()
 plt.imshow(shearedYaxis)
 plt.show()
-
+```
 
 
 
 ## iv)Image Reflection
-
+```
 matrixx=np.float32([[1, 0, 0],
                     [0,-1,rows],
                     [0,0,1]])
@@ -108,9 +108,9 @@ plt.show()
 
 
 
-
+```
 ## v)Image Rotation
-
+```
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -124,10 +124,10 @@ rotatedImage = cv2.warpPerspective(inputImage,M,(int(cols),int(rows)))
 plt.axis('off')
 plt.imshow(rotatedImage)
 plt.show()
-
+```
 
 ## vi)Image Cropping
-
+```
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -137,7 +137,7 @@ CroppedImage= inputImage[20:150, 60:230]
 plt.axis('off')
 plt.imshow(CroppedImage)
 plt.show()
-
+```
 
 
 
