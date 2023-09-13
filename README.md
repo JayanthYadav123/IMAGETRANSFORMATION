@@ -125,9 +125,9 @@ plt.axis('off')
 plt.imshow(rotatedImage)
 plt.show()
 
-```
+
 ## vi)Image Cropping
-```
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -137,7 +137,7 @@ CroppedImage= inputImage[20:150, 60:230]
 plt.axis('off')
 plt.imshow(CroppedImage)
 plt.show()
-`
+
 
 
 
