@@ -42,8 +42,8 @@ Display all the Transformed images and end the program.
 
 Developed By:G.Jayanth
 Register Number:212221230030
-```
-## i)Image Translation
+
+##  )Image Translation
 
 import numpy as np
 import cv2
@@ -61,7 +61,7 @@ translatedImage =cv2.warpPerspective (inputImage, M, (cols, rows))
 plt.imshow(translatedImage)
 plt.show()
 
-```
+
 ## ii) Image Scaling
 
 rows, cols, dim = inputImage.shape
@@ -75,7 +75,7 @@ plt.show()
 
 
 ## iii)Image shearing
-```
+
 matrixX = np.float32([[1, 0.5, 0],
                       [0, 1 ,0],
                       [0, 0, 1]])
@@ -89,12 +89,12 @@ plt.imshow(shearedXaxis)
 plt.show()
 plt.imshow(shearedYaxis)
 plt.show()
-```
+
 
 
 
 ## iv)Image Reflection
-```
+
 matrixx=np.float32([[1, 0, 0],
                     [0,-1,rows],
                     [0,0,1]])
@@ -106,7 +106,7 @@ reflectedY=cv2.warpPerspective(inputImage, matrixy, (cols, rows))
 plt.imshow(reflectedY)
 plt.show()
 
-```
+
 
 
 ## v)Image Rotation
