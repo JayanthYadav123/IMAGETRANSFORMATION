@@ -44,7 +44,7 @@ Developed By:G.Jayanth
 Register Number:212221230030
 
 ##  1)Image Translation
-```
+
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -61,9 +61,9 @@ translatedImage =cv2.warpPerspective (inputImage, M, (cols, rows))
 plt.imshow(translatedImage)
 plt.show()
 
-
+```
 ## ii) Image Scaling
-
+```
 rows, cols, dim = inputImage.shape
 M = np. float32 ([[1.5, 0 ,0],
                  [0, 1.8, 0],
@@ -72,10 +72,10 @@ scaledImage=cv2.warpPerspective(inputImage, M, (cols * 2, rows * 2))
 plt.imshow(scaledImage)
 plt.show()
 
-
+```
 
 ## iii)Image shearing
-
+```
 matrixX = np.float32([[1, 0.5, 0],
                       [0, 1 ,0],
                       [0, 0, 1]])
@@ -91,10 +91,10 @@ plt.imshow(shearedYaxis)
 plt.show()
 
 
-
+```
 
 ## iv)Image Reflection
-
+```
 matrixx=np.float32([[1, 0, 0],
                     [0,-1,rows],
                     [0,0,1]])
@@ -107,10 +107,10 @@ plt.imshow(reflectedY)
 plt.show()
 
 
-
+```
 
 ## v)Image Rotation
-
+```
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -125,9 +125,9 @@ plt.axis('off')
 plt.imshow(rotatedImage)
 plt.show()
 
-
+```
 ## vi)Image Cropping
-
+```
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -138,6 +138,7 @@ plt.axis('off')
 plt.imshow(CroppedImage)
 plt.show()
 
+```
 ```
 
 
