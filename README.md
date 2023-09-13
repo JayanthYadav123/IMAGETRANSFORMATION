@@ -44,7 +44,7 @@ Developed By:G.Jayanth
 Register Number:212221230030
 ```
 ## i)Image Translation
-```
+
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -63,7 +63,7 @@ plt.show()
 
 ```
 ## ii) Image Scaling
-```
+
 rows, cols, dim = inputImage.shape
 M = np. float32 ([[1.5, 0 ,0],
                  [0, 1.8, 0],
